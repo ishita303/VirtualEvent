@@ -1,8 +1,12 @@
+body{
+  padding-bottom: 0 !important;
+}
+
 main {
-  margin-left: $sub-menu-width + $main-menu-width + $main-margin;
-  margin-top: $navbar-height + $main-margin - 15;
-  margin-right: $main-margin;
-  margin-bottom: $main-margin - 20;
+  margin-left: 123px !important;
+  margin-top: 100px;
+  margin-right: 0;
+  margin-bottom: 0;
   transition: margin-left $menu-collapse-time;
 
   &.sub-hidden {

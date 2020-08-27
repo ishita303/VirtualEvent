@@ -7,15 +7,12 @@ import Breadcrumb from '../../../containers/navs/Breadcrumb';
 const DefaultDashboard = ({ intl, match }) => {
   const { messages } = intl;
 
+const image={
+  height: "660px", width: "1410px" 
+}
+
   return (
-    <>
-      <Row>
-        <Colxx xxs="12">
-          <Breadcrumb heading="menu.default" match={match} />
-          <Separator className="mb-5" />
-        </Colxx>
-      </Row>
-    </>
+   <img style={image} src="https://ficci-capam.framez.sg/images/lobby.jpg" />
   );
 };
 export default injectIntl(DefaultDashboard);

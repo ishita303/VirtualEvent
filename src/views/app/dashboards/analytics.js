@@ -7,14 +7,14 @@ import Breadcrumb from '../../../containers/navs/Breadcrumb';
 const DashboardAnalytics = ({ intl, match }) => {
   const { messages } = intl;
   return (
-    <>
-      <Row>
-        <Colxx xxs="12">
-          <Breadcrumb heading="menu.analytics" match={match} />
-          <Separator className="mb-5" />
-        </Colxx>
-      </Row>
-    </>
-  );
+   <>
+     <div style={{
+       backgroundImage: `url("https://ficci-capam.framez.sg/images/lounge.jpg")`,
+       backgroundRepeat: 'no-repeat',height:'600px', width:'1800px',
+       backgroundSize: 'contain',
+     }}>
+     </div>
+  </>
+);
 };
 export default injectIntl(DashboardAnalytics);

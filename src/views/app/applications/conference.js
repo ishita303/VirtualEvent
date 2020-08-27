@@ -4,18 +4,18 @@ import { Row } from 'reactstrap';
 import { Colxx, Separator } from '../../../components/common/CustomBootstrap';
 import Breadcrumb from '../../../containers/navs/Breadcrumb';
 
-const DefaultDashboard = ({ intl, match }) => {
+const DefaultConference = ({ intl, match }) => {
   const { messages } = intl;
-  const imagepath = "https://ficci-capam.framez.sg/images/lobby.jpg";
+
   return (
    <>
      <div style={{
-         height:'1200px',
-         width:'1100px',
+       backgroundImage: `url("https://ficci-capam.framez.sg/images/audi3.jpg")`,
+       backgroundRepeat: 'no-repeat',height:'600px', width:'1800px',
+       backgroundSize: 'contain',
      }}>
-      <img src= {imagepath} />
      </div>
   </>
   );
 };
-export default injectIntl(DefaultDashboard);
+export default injectIntl(DefaultConference);

@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 
 import { Colxx } from '../common/CustomBootstrap';
 
+const newText = text => text.split('\n').map(i => <p>{i}</p>);
+
 const TodoListItem = ({ item, handleCheckChange, isSelected }) => {
   return (
     <Colxx xxs="12">
@@ -49,7 +51,7 @@ const TodoListItem = ({ item, handleCheckChange, isSelected }) => {
           </div>
         </div>
         <div className="card-body pt-1">
-          <p className="mb-0">{item.detail}</p>
+          <p className="mb-0">{newText(item.detail)}</p>
         </div>
       </Card>
     </Colxx>

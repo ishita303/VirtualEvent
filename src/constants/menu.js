@@ -23,12 +23,12 @@ const data = [
       {
         icon: 'simple-icon-calculator',
         label: 'Conference',
-        to: `${adminRoot}/applications/survey`,
+        to: `${adminRoot}/applications/conference`,
       },
       {
         icon: 'simple-icon-bubbles',
         label: 'Speakers Profile',
-        to: `${adminRoot}/applications/todo`,
+        to: `${adminRoot}/applications/chat`,
       },
     ],
   },
@@ -47,18 +47,13 @@ const data = [
     subs: [
       {
         icon: 'simple-icon-check',
-        label: 'Agenda',
+        label: 'Document library',
         to: `${adminRoot}/applications/todo`,
       },
       {
         icon: 'simple-icon-calculator',
-        label: 'Conference',
+        label: 'Video library',
         to: `${adminRoot}/applications/survey`,
-      },
-      {
-        icon: 'simple-icon-bubbles',
-        label: 'Speakers Profile',
-        to: `${adminRoot}/applications/todo`,
       },
     ],
   },
@@ -66,7 +61,19 @@ const data = [
     id: 'blankpage',
     icon: 'iconsminds-bucket',
     label: 'Support',
-    to: `${adminRoot}/blank-page`,
+    to: `${adminRoot}/pages`,
+    subs: [
+      {
+        icon: 'simple-icon-check',
+        label: 'Help Desk',
+        to: `${adminRoot}/pages/knowledge-base`,
+      },
+      {
+        icon: 'simple-icon-calculator',
+        label: 'FAQs',
+        to: `${adminRoot}/pages/faq`,
+      },
+    ],
   },
   {
     id: 'menu',

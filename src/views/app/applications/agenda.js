@@ -6,14 +6,14 @@ import Breadcrumb from '../../../containers/navs/Breadcrumb';
 
 const DefaultDashboard = ({ intl, match }) => {
   const { messages } = intl;
-  const imagepath = "https://ficci-capam.framez.sg/images/lobby.jpg";
+
   return (
    <>
      <div style={{
-         height:'1200px',
-         width:'1100px',
+       backgroundImage: `url("https://ficci-capam.framez.sg/images/lobby.jpg")`,
+       backgroundRepeat: 'no-repeat',height:'600px', width:'1800px',
+       backgroundSize: 'contain',
      }}>
-      <img src= {imagepath} />
      </div>
   </>
   );

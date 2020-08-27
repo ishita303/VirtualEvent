@@ -4,11 +4,8 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 const Todo = React.lazy(() =>
   import(/* webpackChunkName: "application-todo" */ './todo')
 );
-const Survey = React.lazy(() =>
-  import(/* webpackChunkName: "application-survey" */ './survey')
-);
-const SurveyDetail = React.lazy(() =>
-  import(/* webpackChunkName: "application-survey-detail" */ './survey-detail')
+const Conference = React.lazy(() =>
+  import(/* webpackChunkName: "application-survey" */ './conference')
 );
 const Chat = React.lazy(() =>
   import(/* webpackChunkName: "application-chat" */ './chat')
@@ -23,13 +20,8 @@ const Applications = ({ match }) => (
         render={(props) => <Todo {...props} />}
       />
       <Route
-        path={`${match.url}/survey/:surveyid`}
-        render={(props) => <SurveyDetail {...props} />}
-        isExact
-      />
-      <Route
-        path={`${match.url}/survey`}
-        render={(props) => <Survey {...props} />}
+        path={`${match.url}/conference`}
+        render={(props) => <Conference {...props} />}
         isExact
       />
       <Route

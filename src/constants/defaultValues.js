@@ -1,12 +1,12 @@
 import { UserRole } from "../helpers/authHelper";
 
-/* 
+/*
 Menu Types:
 "menu-default", "menu-sub-hidden", "menu-hidden"
 */
 export const defaultMenuType = 'menu-default';
 
-export const subHiddenBreakpoint = 1440;
+export const subHiddenBreakpoint = 1400;
 export const menuHiddenBreakpoint = 768;
 export const defaultLocale = 'en';
 export const localeOptions = [
@@ -26,7 +26,7 @@ export const firebaseConfig = {
 
 export const currentUser = {
   id: 1,
-  title: 'Sarah Kortney',
+  title: 'Ishita Jain',
   img: '/assets/img/profiles/l-1.jpg',
   date: 'Last seen today 15:24',
   role: UserRole.Admin

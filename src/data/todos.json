@@ -1,8 +1,8 @@
 {
     "data": [
       {
-        "title": "Book train tickets",
-        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+        "title": "Inaugural Session",
+        "detail": "- Welcome Address by Dr Sangita Reddy, President, FICCI \n - Keynote Address by Mr Rashesh Shah, Past President, FICCI and Chairman & CEO, Edelweiss Group\n- Theme Address by Mr Sunil Sanghai, Chairman, FICCI National Committee on Capital Markets and Founder & CEO, NovaDhruva Capital Pvt. Ltd.\n- Exchange Perspective by Mr Ashishkumar Chauhan, Managing Director & CEO, BSE\n- Release of FICCI’s Experts’ Voice 2020 & FICCI-IIM Ahmedabad Report : Women on Boards in India\n- Inaugural Address by Mr Ajay Tyagi, Chairman, Securities and Exchange Board of India \n- Concluding Remarks by Mr Himanshu Kaji, Co-chair, FICCI Capital Markets Committee and Executive Director & Group COO, Edelweiss Financial Services Limited \n- Session moderated by Ms. Jyoti Vij, Deputy Secretary General, FICCI",
         "category" : "Sass",
         "createDate" : "22.08.2018",
         "status" : "PENDING",
@@ -32,4 +32,3 @@
       }
     ]
   }
-  

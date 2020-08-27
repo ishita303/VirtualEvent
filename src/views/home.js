@@ -169,7 +169,7 @@ const Home = () => {
   const refSectionFooter = useRef(null);
   const [activeTab, setActiveTab] = useState(0);
 
-  
+
 
   useEffect(() => {
     window.addEventListener('scroll', onWindowScroll);
@@ -217,7 +217,7 @@ const Home = () => {
     });
     return false;
   }
-  
+
   const toggle = tab => {
     if (activeTab !== tab) setActiveTab(tab);
   }
@@ -230,19 +230,6 @@ const Home = () => {
         <a className="logo-mobile c-pointer" href="#scroll" onClick={(event) => scrollTo(event, 'home')} >
           <span></span>
         </a>
-        <ul className="navbar-nav">
-          <li className="nav-item"><a className="c-pointer" href="#scroll" onClick={(event) => scrollTo(event, 'features')}>FEATURES</a></li>
-          <li className="nav-item"><a className="c-pointer" href="#scroll" onClick={(event) => scrollTo(event, 'layouts')}>LAYOUTS</a></li>
-          <li className="nav-item"><a className="c-pointer" href="#scroll" onClick={(event) => scrollTo(event, 'components')}>COMPONENTS</a></li>
-          <li className="nav-item"><a className="c-pointer" href="#scroll" onClick={(event) => scrollTo(event, 'apps')}>APPS</a></li>
-          <li className="nav-item"><a className="c-pointer" href="#scroll" onClick={(event) => scrollTo(event, 'themes')}>THEMES</a></li>
-          <li className="nav-item">
-            <div className="separator"></div>
-          </li>
-          <li className="nav-item text-center">
-            <a className="btn btn-outline-primary btn-sm mobile-menu-cta" target="_blank" rel="noopener noreferrer" href={buyUrl}>BUY</a>
-          </li>
-        </ul>
       </div>
 
       <div className="main-container">

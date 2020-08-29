@@ -1,46 +1,37 @@
 const faq = [
   {
-    question: 'Nihil Anim Keffiyeh Helvetica?',
-    answer: `<strong>Moon Tempor</strong><br/>
-                    Aenean non nibh nec nunc aliquam iaculis. Ut quis suscipit nunc. Duis at lectus a est aliquam venenatis vitae eget arcu. Sed egestas felis eget convallis maximus.<br/><br/>
-                 <strong>High Life Accusamus</strong><br/>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborumeiusmod.Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origincoffeenulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beerlaborewes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butchervicelomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synthnesciuntyou probably haven't heard of them accusamus labore sustainable VHS.<br/><br/>
-                 <strong>Curabitur Maximus</strong><br/>Food truck quinoa nesciunt laborumeiusmod.Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origincoffeenulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beerlaborewes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butchervicelomo.<br/><br/>
-                 <ol>
-                    <li>Ut quis suscipit nunc</li>
-                    <li>Duis at lectus a est aliquam</li>
-                    <li>Aenean non nibh nec</li>
-                    <li>Non cupidatat skateboard</li>
-                 </ol>`,
+    question: 'E-mail support',
+    answer: `Contact Us on- <a href="mailto:arun.jaglan@framez.sg">Arun.jaglan@framez.sg</a> or <a href="mailto:Vineet.rai@framez.sg">Vineet.rai@framez.sg</a>`,
   },
   {
-    question: 'Adding Content Life Accusamus?',
+    question: 'Helpline numbers',
     answer:
-      "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terryrichardson ad squid. 3 wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborumeiusmod.Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origincoffeenulla assumenda shoreditch et.<br/><br/>Nihil anim keffiyeh helvetica, craft beerlaborewes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butchervicelomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synthnesciuntyou probably haven't heard of them accusamus labore sustainable VHS.",
+      "Call us on - +91 6366554300/+91 9871193189",
   },
   {
-    question: 'Aenean Researches and Experiments?',
+    question: 'How to start – CAPAM 2020 EVENT?',
     answer:
-      "Sunt aliqua put a bird on it squid single-origincoffeenulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beerlaborewes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butchervice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synthnesciuntyou probably haven't heard of them accusamus labore sustainable VHS.",
+      "Once you in the home page and as you begin experiencing the platform of CAPAM 2020, kindly refer to the pop out tabs that appear in each page as you proceed. This will lead to the next page of the event accordingly. ",
   },
   {
-    question: 'Proident Excepteur Butcher?',
+    question: 'Will I have a support or direction leading me to the main auditorium? ',
     answer:
-      ' Tellus a sem condimentum, vitae convallis sapien feugiat. Aenean non nibh nec nunc aliquam iaculis. Ut quis suscipit nunc. Duis at lectus a est aliquam venenatis vitae eget arcu. Sed egestas felis eget convallis maximus.<br/><br/>Curabitur maximus, ligula vel sagittis iaculis, risus nisi tincidunt sem, ut ultricies libero nulla eu ligula. Nam ultricies mollis nulla, sed laoreet leo convallis ac. Mauris nisl risus, tincidunt ac diam aliquet, convallis pellentesque nisi. Nam sit amet libero at odio malesuada ultricies a vitae dolor. Cras in viverra felis, non consequat quam. Praesent a orci enim. Vivamus porttitor nisi at nisl egestas iaculis. Nullam commodo eget dui sollicitudin sagittis. Duis id nibh mollis, hendrerit metus consectetur, ullamcorper risus. Morbi elementum ultrices nunc, quis porta nisi ornare sit amet. ',
+      'Yes, there will be signages provided. Also, you can contact helpdesk if you are unable to navigate around.',
   },
   {
-    question: 'Raw Denim Aesthetic?',
+    question: 'I have storage issue on my phone?',
     answer:
-      'Aenean non nibh nec nunc aliquam iaculis. Ut quis suscipit nunc. Duis at lectus a est aliquam venenatis vitae eget arcu. Sed egestas felis eget convallis maximus. Curabitur maximus, ligula vel sagittis iaculis, risus nisi tincidunt sem, ut ultricies libero nulla eu ligula. Nam ultricies mollis nulla, sed laoreet leo convallis ac.<br/><br/>Mauris nisl risus, tincidunt ac diam aliquet, convallis pellentesque nisi. Nam sit amet libero at odio malesuada ultricies a vitae dolor.',
+      'You will not require your phone storage to participate in the conference unless you need to download any video/brochure/or any event details.',
   },
   {
-    question: 'Aliquam Venenatis Vitae?',
+    question: 'What if I have network issues in between/during the event?',
     answer:
-      "Squid single-origincoffeenulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beerlaborewes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butchervice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synthnesciuntyou probably haven't heard of them accusamus labore sustainable VHS.",
+      "You will require a min speed of 2mbps – 4mbps in order to enjoy uninterrupted sessions.  In case you face network issues you can login again.",
   },
   {
-    question: 'Venenatis Vitae Eget Arcu?',
+    question: 'What if I have login late?',
     answer:
-      ' Tellus a sem condimentum, vitae convallis sapien feugiat. Aenean non nibh nec nunc aliquam iaculis. Ut quis suscipit nunc. Duis at lectus a est aliquam venenatis vitae eget arcu. Sed egestas felis eget convallis maximus. Curabitur maximus, ligula vel sagittis iaculis, risus nisi tincidunt sem, ut ultricies libero nulla eu ligula. Nam ultricies mollis nulla, sed laoreet leo convallis ac. Mauris nisl risus, tincidunt ac diam aliquet, convallis pellentesque nisi. Nam sit amet libero at odio malesuada ultricies a vitae dolor. Cras in viverra felis, non consequat quam. Praesent a orci enim. Vivamus porttitor nisi at nisl egestas iaculis. Nullam commodo eget dui sollicitudin sagittis. Duis id nibh mollis, hendrerit metus consectetur, ullamcorper risus. Morbi elementum ultrices nunc, quis porta nisi ornare sit amet. ',
+      'You will be taken directly to the sessions happening at the moment of login. However, the sessions are recorded and can watch it later just in case you have missed it out.',
   },
 ];
 

@@ -1,24 +1,24 @@
 import React, { Suspense } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 
-const Forms = React.lazy(() =>
-  import(/* webpackChunkName: "ui-forms" */ './forms')
+const Faq = React.lazy(() =>
+  import(/* webpackChunkName: "faq" */ './faq')
 );
-const Components = React.lazy(() =>
-  import(/* webpackChunkName: "ui-components" */ './components')
+const Help = React.lazy(() =>
+  import(/* webpackChunkName: "help" */ './help')
 );
 
 const UI = ({ match }) => (
   <Suspense fallback={<div className="loading" />}>
     <Switch>
-      <Redirect exact from={`${match.url}/`} to={`${match.url}/forms`} />
+      <Redirect exact from={`${match.url}/`} to={`${match.url}/faq`} />
       <Route
-        path={`${match.url}/forms`}
-        render={(props) => <Forms {...props} />}
+        path={`${match.url}/faq`}
+        render={(props) => <Faq {...props} />}
       />
       <Route
-        path={`${match.url}/components`}
-        render={(props) => <Components {...props} />}
+        path={`${match.url}/help`}
+        render={(props) => <Help {...props} />}
       />
       <Redirect to="/error" />
     </Switch>

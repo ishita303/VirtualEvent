@@ -1,108 +1,323 @@
-/* eslint-disable react/no-array-index-key */
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Row,
   Card,
   CardBody,
-  Badge,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
+  CardTitle,
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  FormGroup,
+  Input,
+  Label,
 } from 'reactstrap';
-import LinesEllipsis from 'react-lines-ellipsis';
-import responsiveHOC from 'react-lines-ellipsis/lib/responsiveHOC';
-import { NavLink } from 'react-router-dom';
-import Breadcrumb from '../../../../containers/navs/Breadcrumb';
+import IntlMessages from '../../../../helpers/IntlMessages';
 import {
-  Separator,
   Colxx,
+  Separator,
 } from '../../../../components/common/CustomBootstrap';
-import { blogData } from '../../../../data/blog';
-
-const ResponsiveEllipsis = responsiveHOC()(LinesEllipsis);
+import Breadcrumb from '../../../../containers/navs/Breadcrumb';
 
 const BlogList = ({ match }) => {
+  const [modalBasic, setModalBasic] = useState(false);
+  const [modalLong, setModalLong] = useState(false);
+  const [modalBack, setModalBack] = useState(false);
+  const [backdrop, setBackdrop] = useState(true);
+  const [modalRight, setModalRight] = useState(false);
+  const [modalNestedContainer, setModalNestedContainer] = useState(false);
+  const [modalNested, setModalNested] = useState(false);
+  const [closeAll, setCloseAll] = useState(false);
+  const [modalLarge, setModalLarge] = useState(false);
+  const [modalSmall, setModalSmall] = useState(false);
   return (
     <>
+    <Row>
+      <Colxx xxs="12">
+        <Breadcrumb heading="Document Library" match={match} />
+        <Separator className="mb-5" />
+      </Colxx>
+    </Row>
+    <Row>
+      <Colxx xxs="12">
+        <Card className="mb-4">
+          <CardBody>
+            <CardTitle>
+              SPONSORS
+            </CardTitle>
+            <div>
+              <Button
+                color="primary"
+                outline
+                onClick={() => setModalBasic(true)}
+              >
+                View
+              </Button>
+              <Modal
+                isOpen={modalBasic}
+                toggle={() => setModalBasic(!modalBasic)}
+              >
+                <ModalHeader>
+                  SPONSORS
+                </ModalHeader>
+                <ModalBody>
+                  <img src=''/>
+                </ModalBody>
+                <ModalFooter>
+                  <Button
+                    color="secondary"
+                    onClick={() => setModalBasic(false)}
+                  >
+                    Cancel
+                  </Button>
+                </ModalFooter>
+              </Modal>
+            </div>
+          </CardBody>
+        </Card>
+      </Colxx>
+      </Row>
+
       <Row>
         <Colxx xxs="12">
-          <Breadcrumb heading="menu.blog-list" match={match} />
-          <Separator className="mb-5" />
+          <Card className="mb-4">
+            <CardBody>
+              <CardTitle>
+                FICCI EOS - July 2020
+              </CardTitle>
+              <div>
+                <Button
+                  color="primary"
+                  outline
+                  onClick={() => setModalBasic(true)}
+                >
+                  View
+                </Button>
+                <Modal
+                  isOpen={modalBasic}
+                  toggle={() => setModalBasic(!modalBasic)}
+                >
+                  <ModalHeader>
+                    FICCI EOS - July 2020
+                  </ModalHeader>
+                  <ModalBody>
+                    <img src=''/>
+                  </ModalBody>
+                  <ModalFooter>
+                    <Button
+                      color="secondary"
+                      onClick={() => setModalBasic(false)}
+                    >
+                      Cancel
+                    </Button>
+                  </ModalFooter>
+                </Modal>
+              </div>
+            </CardBody>
+          </Card>
         </Colxx>
-        {blogData.map((blogItem, index) => {
-          return (
-            <Colxx xxs="12" lg="6" className="mb-5" key={`blogItem_${index}`}>
-              <Card className="flex-row listing-card-container">
-                <div className="w-40 position-relative">
-                  <NavLink to="blog-detail">
-                    <img
-                      className="card-img-left"
-                      src={blogItem.thumb}
-                      alt="Card cap"
-                    />
-                    {blogItem.badge && (
-                      <Badge
-                        color="primary"
-                        pill
-                        className="position-absolute badge-top-left"
+        </Row>
+
+        <Row>
+          <Colxx xxs="12">
+            <Card className="mb-4">
+              <CardBody>
+                <CardTitle>
+                  MANUFACTURING SURVEY REPORT
+                </CardTitle>
+                <div>
+                  <Button
+                    color="primary"
+                    outline
+                    onClick={() => setModalBasic(true)}
+                  >
+                    View
+                  </Button>
+                  <Modal
+                    isOpen={modalBasic}
+                    toggle={() => setModalBasic(!modalBasic)}
+                  >
+                    <ModalHeader>
+                      MANUFACTURING SURVEY REPORT
+                    </ModalHeader>
+                    <ModalBody>
+                      <img src=''/>
+                    </ModalBody>
+                    <ModalFooter>
+                      <Button
+                        color="secondary"
+                        onClick={() => setModalBasic(false)}
                       >
-                        {blogItem.badge}
-                      </Badge>
-                    )}
-                  </NavLink>
+                        Cancel
+                      </Button>
+                    </ModalFooter>
+                  </Modal>
                 </div>
-                <div className="w-60 d-flex align-items-center">
-                  <CardBody>
-                    <NavLink to="blog-detail">
-                      <ResponsiveEllipsis
-                        className="mb-3 listing-heading"
-                        text={blogItem.title}
-                        maxLine="2"
-                        trimRight
-                        basedOn="words"
-                        component="h5"
-                      />
-                    </NavLink>
-                    <ResponsiveEllipsis
-                      className="listing-desc text-muted"
-                      text={blogItem.description}
-                      maxLine="3"
-                      trimRight
-                      basedOn="words"
-                      component="p"
-                    />
-                  </CardBody>
-                </div>
+              </CardBody>
+            </Card>
+          </Colxx>
+          </Row>
+
+          <Row>
+            <Colxx xxs="12">
+              <Card className="mb-4">
+                <CardBody>
+                  <CardTitle>
+                    FICCI Dhruva Survey
+                  </CardTitle>
+                  <div>
+                    <Button
+                      color="primary"
+                      outline
+                      onClick={() => setModalBasic(true)}
+                    >
+                      View
+                    </Button>
+                    <Modal
+                      isOpen={modalBasic}
+                      toggle={() => setModalBasic(!modalBasic)}
+                    >
+                      <ModalHeader>
+                        FICCI Dhruva Survey
+                      </ModalHeader>
+                      <ModalBody>
+                        <img src=''/>
+                      </ModalBody>
+                      <ModalFooter>
+                        <Button
+                          color="secondary"
+                          onClick={() => setModalBasic(false)}
+                        >
+                          Cancel
+                        </Button>
+                      </ModalFooter>
+                    </Modal>
+                  </div>
+                </CardBody>
               </Card>
             </Colxx>
-          );
-        })}
-      </Row>
-      <Row>
-        <Colxx xxs="12">
-          <Pagination listClassName="justify-content-center">
-            <PaginationItem>
-              <PaginationLink className="prev" href="#">
-                <i className="simple-icon-arrow-left" />
-              </PaginationLink>
-            </PaginationItem>
-            <PaginationItem active>
-              <PaginationLink href="#">1</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">2</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">3</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink className="next" href="#">
-                <i className="simple-icon-arrow-right" />
-              </PaginationLink>
-            </PaginationItem>
-          </Pagination>
-        </Colxx>
-      </Row>
+            </Row>
+
+            <Row>
+              <Colxx xxs="12">
+                <Card className="mb-4">
+                  <CardBody>
+                    <CardTitle>
+                      WOB_Final Report_3103_V12
+                    </CardTitle>
+                    <div>
+                      <Button
+                        color="primary"
+                        outline
+                        onClick={() => setModalBasic(true)}
+                      >
+                        View
+                      </Button>
+                      <Modal
+                        isOpen={modalBasic}
+                        toggle={() => setModalBasic(!modalBasic)}
+                      >
+                        <ModalHeader>
+                          WOB_Final Report_3103_V12
+                        </ModalHeader>
+                        <ModalBody>
+                          <img src=''/>
+                        </ModalBody>
+                        <ModalFooter>
+                          <Button
+                            color="secondary"
+                            onClick={() => setModalBasic(false)}
+                          >
+                            Cancel
+                          </Button>
+                        </ModalFooter>
+                      </Modal>
+                    </div>
+                  </CardBody>
+                </Card>
+              </Colxx>
+              </Row>
+
+              <Row>
+                <Colxx xxs="12">
+                  <Card className="mb-4">
+                    <CardBody>
+                      <CardTitle>
+                        CAPAM Compendium 2020
+                      </CardTitle>
+                      <div>
+                        <Button
+                          color="primary"
+                          outline
+                          onClick={() => setModalBasic(true)}
+                        >
+                          View
+                        </Button>
+                        <Modal
+                          isOpen={modalBasic}
+                          toggle={() => setModalBasic(!modalBasic)}
+                        >
+                          <ModalHeader>
+                            CAPAM Compendium 2020
+                          </ModalHeader>
+                          <ModalBody>
+                            <img src=''/>
+                          </ModalBody>
+                          <ModalFooter>
+                            <Button
+                              color="secondary"
+                              onClick={() => setModalBasic(false)}
+                            >
+                              Cancel
+                            </Button>
+                          </ModalFooter>
+                        </Modal>
+                      </div>
+                    </CardBody>
+                  </Card>
+                </Colxx>
+                </Row>
+
+                <Row>
+                  <Colxx xxs="12">
+                    <Card className="mb-4">
+                      <CardBody>
+                        <CardTitle>
+                          L&T PROFILE
+                        </CardTitle>
+                        <div>
+                          <Button
+                            color="primary"
+                            outline
+                            onClick={() => setModalBasic(true)}
+                          >
+                            View
+                          </Button>
+                          <Modal
+                            isOpen={modalBasic}
+                            toggle={() => setModalBasic(!modalBasic)}
+                          >
+                            <ModalHeader>
+                              L&T PROFILE
+                            </ModalHeader>
+                            <ModalBody>
+                              <img src=''/>
+                            </ModalBody>
+                            <ModalFooter>
+                              <Button
+                                color="secondary"
+                                onClick={() => setModalBasic(false)}
+                              >
+                                Cancel
+                              </Button>
+                            </ModalFooter>
+                          </Modal>
+                        </div>
+                      </CardBody>
+                    </Card>
+                  </Colxx>
+                  </Row>
     </>
   );
 };

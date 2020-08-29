@@ -5,10 +5,10 @@ const Todo = React.lazy(() =>
   import(/* webpackChunkName: "application-todo" */ './todo')
 );
 const Conference = React.lazy(() =>
-  import(/* webpackChunkName: "application-survey" */ './conference')
+  import(/* webpackChunkName: "application-conference" */ './conference')
 );
-const Chat = React.lazy(() =>
-  import(/* webpackChunkName: "application-chat" */ './chat')
+const Speaker = React.lazy(() =>
+  import(/* webpackChunkName: "application-speaker" */ './speaker')
 );
 
 const Applications = ({ match }) => (
@@ -25,8 +25,8 @@ const Applications = ({ match }) => (
         isExact
       />
       <Route
-        path={`${match.url}/chat`}
-        render={(props) => <Chat {...props} />}
+        path={`${match.url}/speaker`}
+        render={(props) => <Speaker {...props} />}
       />
       <Redirect to="/error" />
     </Switch>

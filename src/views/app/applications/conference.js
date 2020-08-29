@@ -5,17 +5,11 @@ import { Colxx, Separator } from '../../../components/common/CustomBootstrap';
 import Breadcrumb from '../../../containers/navs/Breadcrumb';
 
 const DefaultConference = ({ intl, match }) => {
-  const { messages } = intl;
-
-  return (
-   <>
-     <div style={{
-       backgroundImage: `url("https://ficci-capam.framez.sg/images/audi3.jpg")`,
-       backgroundRepeat: 'no-repeat',height:'600px', width:'1800px',
-       backgroundSize: 'contain',
-     }}>
-     </div>
-  </>
-  );
+  const image2={
+    height: "720px", width: "1320px"
+   }
+    return (
+     <img style={image2} src="https://ficci-capam.framez.sg/images/audi3.jpg" />
+    );
 };
 export default injectIntl(DefaultConference);

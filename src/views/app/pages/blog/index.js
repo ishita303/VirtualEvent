@@ -4,7 +4,9 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 const BlogList = React.lazy(() =>
   import(/* webpackChunkName: "blog-list" */ './blog-list')
 );
-
+const BlogList2 = React.lazy(() =>
+  import(/* webpackChunkName: "blog-list" */ './blog-list2')
+);
 const BlogDetail = React.lazy(() =>
   import(/* webpackChunkName: "blog-detail" */ './blog-detail')
 );
@@ -16,6 +18,10 @@ const PagesBlog = ({ match }) => (
       <Route
         path={`${match.url}/blog-list`}
         render={(props) => <BlogList {...props} />}
+      />
+      <Route
+        path={`${match.url}/blog-list2`}
+        render={(props) => <BlogList2 {...props} />}
       />
       <Route
         path={`${match.url}/blog-detail`}

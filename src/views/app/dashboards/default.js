@@ -1,8 +1,10 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import { Row } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 import { Colxx, Separator } from '../../../components/common/CustomBootstrap';
 import Breadcrumb from '../../../containers/navs/Breadcrumb';
+import { adminRoot } from '../../../constants/defaultValues';
 
 const DefaultDashboard = ({ intl, match }) => {
   const { messages } = intl;
@@ -55,27 +57,49 @@ const support={
   return (
     <div>
       <img style={image} src="https://ficci-capam.framez.sg/images/lobby.jpg" />
+
+      <NavLink to={`${adminRoot}/applications/conference`}>
       <div style={constyle}>
         <span className="blinkingdot"></span>
       </div>
+      </NavLink>
+
+      <NavLink to={`${adminRoot}/dashboards/analytics`}>
       <div style={lounge}>
         <span className="blinkingdot"></span>
       </div>
+      </NavLink>
+
+      <NavLink to={`${adminRoot}/ui/help`}>
       <div style={hdstyle}>
         <span className="blinkingdot"></span>
       </div>
+      </NavLink>
+
+      <NavLink to={`${adminRoot}/applications/speaker`}>
       <div style={speaker}>
         <span className="blinkingdot"></span>
       </div>
+      </NavLink>
+
+      <NavLink to={`${adminRoot}/applications/todo`}>
       <div style={agenda}>
         <span className="blinkingdot"></span>
       </div>
+      </NavLink>
+
+      <NavLink to={`${adminRoot}/pages/blog/blog-list`}>
       <div style={doc}>
         <span className="blinkingdot"></span>
       </div>
+      </NavLink>
+
+      <NavLink to={`${adminRoot}/ui/faq`}>
       <div style={support}>
         <span className="blinkingdot"></span>
       </div>
+      </NavLink>
+
     </div>
 
   );

@@ -3,7 +3,7 @@
   "version": "5.2.0",
   "description": "Gogo - React Bootstrap 4 Admin Dashboard Template",
   "private": true,
-  "homepage": "https://ishita303.github.io/VirtualEvent",
+  "homepage": "https://ficci-capam-2020_nyuc.com",
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "availity-reactstrap-validation": "^2.6.1",
@@ -53,7 +53,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI= react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",

@@ -78,8 +78,8 @@ const data = [
   {
     id: 'menu',
     icon: 'iconsminds-three-arrow-fork',
-    label: 'Menu',
-    to: `${adminRoot}/menu`,
+    label: 'Home',
+    to: `${adminRoot}/dashboards/default`,
   },
 ];
 export default data;

@@ -16,7 +16,7 @@ const Home = () => {
   }
   return (
     <NavLink to='./user/login'>
-    <img style={image} src="https://ficci-capam.framez.sg/static/media/beforelogin.7768c518.jpg" />
+      <img style={image} src="https://ficci-capam.framez.sg/static/media/beforelogin.7768c518.jpg" />
     </NavLink>
   )
 };

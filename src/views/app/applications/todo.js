@@ -106,7 +106,7 @@ const TodoApp = ({
   const { messages } = intl;
 
   return (
-    <>
+    <div style={{padding:"20px"}}>
       <Row className="app-row survey-app">
         <Colxx xxs="12">
           <div className="mb-2">
@@ -238,7 +238,7 @@ const TodoApp = ({
         toggleModal={() => setModalOpen(!modalOpen)}
         modalOpen={modalOpen}
       />
-    </>
+    </div>
   );
 };
 

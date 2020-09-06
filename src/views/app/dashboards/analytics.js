@@ -6,10 +6,10 @@ import Breadcrumb from '../../../containers/navs/Breadcrumb';
 
 const DashboardAnalytics = ({ intl, match }) => {
   const image1={
-    height: "720px", width: "1320px"
+    position: "relative"
    }
     return (
-     <img style={image1} src="https://ficci-capam.framez.sg/images/lounge.jpg" />
+     <img height="100%" width="100%" style={image1} src="https://ficci-capam.framez.sg/images/lounge.jpg" />
     );
 };
 export default injectIntl(DashboardAnalytics);

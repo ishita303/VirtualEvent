@@ -32,7 +32,7 @@ const BlogList = ({ match }) => {
   const [modalLarge, setModalLarge] = useState(false);
   const [modalSmall, setModalSmall] = useState(false);
   return (
-    <>
+    <div style={{padding:"20px"}}>
     <Row>
       <Colxx xxs="12">
         <Breadcrumb heading="Document Library" match={match} />
@@ -318,7 +318,7 @@ const BlogList = ({ match }) => {
                     </Card>
                   </Colxx>
                   </Row>
-    </>
+    </div>
   );
 };
 

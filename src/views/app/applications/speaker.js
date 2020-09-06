@@ -37,7 +37,8 @@ const ImageListPages = () => {
   const [modalSmall, setModalSmall] = useState(false);
 
   return (
-    <Row>
+    <div style={{padding:"20px"}}>
+      <Row>
     <Colxx xxs="12">
       <CardTitle className="mb-4">
         SPEAKERS
@@ -330,6 +331,7 @@ const ImageListPages = () => {
 
     </Colxx>
   </Row>
+    </div>
   );
 };
 

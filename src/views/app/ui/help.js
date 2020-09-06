@@ -8,7 +8,7 @@ import { adminRoot } from '../../../constants/defaultValues';
 
 const BlankPage = ({ match }) => {
   const image1={
-    height: "720px", width: "1320px"
+    position: "relative"
    }
    const constyle={
      display: 'flex', justifyContent: 'center', alignItems: 'center',
@@ -47,8 +47,8 @@ const BlankPage = ({ match }) => {
                     top: '46.53%',left: '80.47%'
    }
     return (
-    <div>
-     <img style={image1} src="https://ficci-capam.framez.sg/images/helpdesk.jpg" />
+    <div style={image1}>
+     <img height="100%" width="100%" style={image1} src="https://ficci-capam.framez.sg/images/helpdesk.jpg" />
      <NavLink to={`${adminRoot}/applications/conference`}>
      <div style={constyle}>
        <span className="blinkingdot"></span>

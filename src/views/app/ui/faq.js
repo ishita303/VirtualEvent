@@ -10,7 +10,7 @@ import faqData from '../../../data/faq';
 const Faq = ({ match }) => {
   const [showingIndex, setShowIndex] = useState(0);
   return (
-    <>
+    <div style={{padding:"20px"}}>
       <Row>
         <Colxx xxs="12">
           <Breadcrumb heading="FAQ" match={match} />
@@ -44,7 +44,7 @@ const Faq = ({ match }) => {
           </>
         </Colxx>
       </Row>
-    </>
+    </div>
   );
 };
 

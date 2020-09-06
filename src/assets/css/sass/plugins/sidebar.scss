@@ -709,17 +709,17 @@
 
   &.rounded {
     .app-menu {
-      border-top-right-radius: $border-radius-rounded;
-      border-bottom-right-radius: $border-radius-rounded;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
     }
 
     .sub-menu {
-      border-radius: $border-radius-rounded 0 0 $border-radius-rounded;
+      border-radius: 0;
     }
 
     .sub-hidden .main-menu,
     .menu-sub-hidden .main-menu {
-      border-radius: $border-radius-rounded 0 0 $border-radius-rounded;
+      border-radius: 0;
     }
 
     .sub-show-temporary .main-menu {
@@ -730,16 +730,16 @@
 
 .rounded {
   .sub-menu {
-    border-radius: 0 $border-radius-rounded $border-radius-rounded 0;
+    border-radius: 0;
   }
 
   .sub-hidden .main-menu,
   .menu-sub-hidden .main-menu {
-    border-radius: 0 $border-radius-rounded $border-radius-rounded 0;
+    border-radius: 0;
   }
 
   .sub-show-temporary .main-menu {
-    border-radius: initial;
+    border-radius: 0;
   }
 }
 

@@ -53,8 +53,7 @@ class App extends React.Component {
       <div className="h-100">
         <IntlProvider
           locale={currentAppLocale.locale}
-          messages={currentAppLocale.messages}
-        >
+          messages={currentAppLocale.messages}>
           <>
             <NotificationContainer />
             {isMultiColorActive && <ColorSwitcher />}
@@ -88,7 +87,7 @@ class App extends React.Component {
                   {/*
                   <Redirect exact from="/" to={adminRoot} />
                   */}
-                  <Redirect to="/error" />
+                  <Redirect to="/error"/>
                 </Switch>
               </Router>
             </Suspense>

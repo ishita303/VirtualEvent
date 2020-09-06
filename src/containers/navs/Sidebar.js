@@ -344,6 +344,7 @@ class Sidebar extends Component {
           <div className="scroll">
             <PerfectScrollbar
               options={{ suppressScrollX: true, wheelPropagation: false }}
+              isOpen={this.state.menuOpen}
             >
               <Nav vertical className="list-unstyled">
                 {menuItems &&

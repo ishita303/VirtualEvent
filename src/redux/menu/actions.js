@@ -65,33 +65,23 @@ export const setContainerClassnames = (
   if (!selectedMenuHasSubItems) {
     if (
       currentClasses.includes('menu-default') &&
-      (clickIndex % 4 === 0 || clickIndex % 4 === 3)
-    ) {
+      clickIndex % 4 >= 0) {
       clickIndex = 1;
-    }
-    if (currentClasses.includes('menu-sub-hidden') && clickIndex % 4 === 2) {
-      clickIndex = 0;
-    }
-    if (
-      currentClasses.includes('menu-hidden') &&
-      (clickIndex % 4 === 2 || clickIndex % 4 === 3)
-    ) {
-      clickIndex = 0;
     }
   }
 
   if (clickIndex % 4 === 0) {
     if (
-      currentClasses.includes('menu-default') &&
+      currentClasses.includes('menu-sub-hidden') &&
       currentClasses.includes('menu-sub-hidden')
     ) {
       nextClasses = 'menu-default menu-sub-hidden';
     } else if (currentClasses.includes('menu-default')) {
       nextClasses = 'menu-default';
     } else if (currentClasses.includes('menu-sub-hidden')) {
-      nextClasses = 'menu-sub-hidden';
+      nextClasses = 'menu-default';
     } else if (currentClasses.includes('menu-hidden')) {
-      nextClasses = 'menu-hidden';
+      nextClasses = 'menu-default';
     }
     clickIndex = 0;
   } else if (clickIndex % 4 === 1) {

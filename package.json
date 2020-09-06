@@ -3,7 +3,6 @@
   "version": "5.2.0",
   "description": "Gogo - React Bootstrap 4 Admin Dashboard Template",
   "private": true,
-
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "availity-reactstrap-validation": "^2.6.1",

@@ -39,7 +39,7 @@ const TodoListItem = ({ item, handleCheckChange, isSelected }) => {
               </Badge>
             </div>
           </CardBody>
-          <div className="custom-control custom-checkbox pl-1 align-self-center mr-4">
+          {/* <div className="custom-control custom-checkbox pl-1 align-self-center mr-4">
             <CustomInput
               className="itemCheck mb-0"
               type="checkbox"
@@ -48,7 +48,7 @@ const TodoListItem = ({ item, handleCheckChange, isSelected }) => {
               onChange={(event) => handleCheckChange(event, item.id)}
               label=""
             />
-          </div>
+          </div> */}
         </div>
         <div className="card-body pt-1">
           <p className="mb-0">{newText(item.detail)}</p>

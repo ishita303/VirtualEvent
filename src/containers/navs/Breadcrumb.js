@@ -36,7 +36,7 @@ const BreadcrumbItems = ({ match }) => {
   return (
     <>
       <Breadcrumb className="pt-0 breadcrumb-container d-none d-sm-block d-lg-inline-block">
-        {paths.map((sub, index) => {
+        {/* {paths.map((sub, index) => {
           return (
             <BreadcrumbItem key={index} active={paths.length === index + 1}>
               {paths.length !== index + 1 ? (
@@ -48,7 +48,7 @@ const BreadcrumbItems = ({ match }) => {
               )}
             </BreadcrumbItem>
           );
-        })}
+        })} */}
       </Breadcrumb>
     </>
   );

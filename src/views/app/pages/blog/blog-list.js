@@ -290,26 +290,30 @@ const BlogList = ({ match }) => {
                           <Button
                             color="primary"
                             outline
-                            onClick={() => setModalBasic(true)}
+                            onClick={() => setModalLarge(true)}
                           >
                             View
                           </Button>
                           <Modal
-                            isOpen={modalBasic}
-                            toggle={() => setModalBasic(!modalBasic)}
+                            isOpen={modalLarge}
+                            toggle={() => setModalLarge(!modalLarge)}
+                            style={{maxWidth: "800px"}}
                           >
                             <ModalHeader>
                               L&T PROFILE
                             </ModalHeader>
                             <ModalBody>
-                              <img src=''/>
+                              <iframe src="https://ficci-capam.framez.sg/docs/L&T%20PROFILE.pdf" height="400px" width="100%">
+                              <embed width="100%" height="100%" src="https://ficci-capam.framez.sg/docs/L&T%20PROFILE.pdf" type="application/pdf" />
+                              </iframe>
+                            
                             </ModalBody>
                             <ModalFooter>
                               <Button
                                 color="secondary"
-                                onClick={() => setModalBasic(false)}
+                                onClick={() => setModalLarge(false)}
                               >
-                                Cancel
+                                Close
                               </Button>
                             </ModalFooter>
                           </Modal>

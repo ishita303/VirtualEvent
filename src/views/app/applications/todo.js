@@ -123,7 +123,7 @@ const TodoApp = ({
                 >
                   <IntlMessages id="todo.add-new" />
                 </Button>{' '}
-                <ButtonDropdown
+                {/* <ButtonDropdown
                   isOpen={dropdownSplitOpen}
                   toggle={() => setDropdownSplitOpen(!dropdownSplitOpen)}
                 >
@@ -160,13 +160,13 @@ const TodoApp = ({
                       <IntlMessages id="todo.another-action" />
                     </DropdownItem>
                   </DropdownMenu>
-                </ButtonDropdown>
+                </ButtonDropdown> */}
               </div>
             )}
             <Breadcrumb match={match} />
           </div>
 
-          <div className="mb-2">
+          {/* <div className="mb-2">
             <Button
               color="empty"
               className="pt-0 pl-0 d-inline-block d-md-none"
@@ -215,7 +215,7 @@ const TodoApp = ({
                 </div>
               </div>
             </Collapse>
-          </div>
+          </div> */}
           <Separator className="mb-5" />
           <Row>
             {loading ? (

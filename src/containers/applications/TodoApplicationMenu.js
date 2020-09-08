@@ -89,7 +89,7 @@ const TodoApplicationMenu = ({
               </NavLink>
             </NavItem>
           </ul>
-          <p className="text-muted text-small">
+          {/* <p className="text-muted text-small">
             <IntlMessages id="todo.categories" />
           </p>
           <ul className="list-unstyled mb-5">
@@ -113,7 +113,7 @@ const TodoApplicationMenu = ({
                 </NavItem>
               );
             })}
-          </ul>
+          </ul> */}
           <p className="text-muted text-small">
             <IntlMessages id="todo.labels" />
           </p>

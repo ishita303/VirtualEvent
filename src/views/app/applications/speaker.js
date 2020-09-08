@@ -41,7 +41,11 @@ const ImageListPages = () => {
       <Row>
     <Colxx xxs="12">
       <CardTitle className="mb-4">
-        SPEAKERS
+      <div className="mb-2">
+            <h1>
+            Speakers
+            </h1>
+      </div>
       </CardTitle>
       <Row>
         <Colxx md="6" sm="6" lg="4" xxs="12">

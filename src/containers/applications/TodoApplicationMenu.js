@@ -40,7 +40,7 @@ const TodoApplicationMenu = ({
             <NavItem className={classnames({ active: !filter })}>
               <NavLink to="#" onClick={() => addFilter('', '')} location={{}}>
                 <i className="simple-icon-reload" />
-                <IntlMessages id="todo.all-tasks" />
+                <IntlMessages id="All Events" />
                 <span className="float-right">
                   {loading && allTodoItems.length}
                 </span>
@@ -60,7 +60,7 @@ const TodoApplicationMenu = ({
                 onClick={() => addFilter('status', 'PENDING')}
               >
                 <i className="simple-icon-refresh" />
-                <IntlMessages id="todo.pending-tasks" />
+                <IntlMessages id="Pending Events" />
                 <span className="float-right">
                   {loading &&
                     todoItems.filter((x) => x.status === 'PENDING').length}
@@ -81,7 +81,7 @@ const TodoApplicationMenu = ({
                 onClick={() => addFilter('status', 'COMPLETED')}
               >
                 <i className="simple-icon-check" />
-                <IntlMessages id="todo.completed-tasks" />
+                <IntlMessages id="Completed Events" />
                 <span className="float-right">
                   {loading &&
                     todoItems.filter((x) => x.status === 'COMPLETED').length}

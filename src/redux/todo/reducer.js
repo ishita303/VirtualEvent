@@ -20,9 +20,9 @@ const INIT_STATE = {
   orderColumn: null,
   loading: false,
   labels: [
-    { label: 'EDUCATION', color: 'secondary' },
-    { label: 'NEW FRAMEWORK', color: 'primary' },
-    { label: 'PERSONAL', color: 'info' },
+    { label: 'AFTERNOON', color: 'secondary' },
+    { label: 'MORNING', color: 'primary' },
+    { label: 'EVENING', color: 'info' },
   ],
   orderColumns: [
     { column: 'title', label: 'Title' },

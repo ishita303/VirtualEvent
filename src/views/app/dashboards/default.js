@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { injectIntl } from 'react-intl';
 import { Row } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { Colxx, Separator } from '../../../components/common/CustomBootstrap';
 import Breadcrumb from '../../../containers/navs/Breadcrumb';
 import { adminRoot } from '../../../constants/defaultValues';
+import Tour from "react-user-tour";
 
 const DefaultDashboard = ({ intl, match }) => {
   const { messages } = intl;
@@ -57,15 +58,14 @@ const support={
   return (
     <div style={image}>
       <img style={image} height="100%" width="100%" src="https://ficci-capam.framez.sg/images/lobby.jpg" />
-
       <NavLink to={`${adminRoot}/applications/conference`}>
-      <div style={constyle}>
+      <div style={constyle} class="step1">
         <span className="blinkingdot"></span>
       </div>
       </NavLink>
 
       <NavLink to={`${adminRoot}/dashboards/analytics`}>
-      <div style={lounge}>
+      <div style={lounge} class="step2">
         <span className="blinkingdot"></span>
       </div>
       </NavLink>
@@ -99,9 +99,7 @@ const support={
         <span className="blinkingdot"></span>
       </div>
       </NavLink>
-
-    </div>
-
+  </div>
   );
 };
 export default injectIntl(DefaultDashboard);

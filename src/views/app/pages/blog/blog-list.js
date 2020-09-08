@@ -22,15 +22,15 @@ import Breadcrumb from '../../../../containers/navs/Breadcrumb';
 
 const BlogList = ({ match }) => {
   const [modalBasic, setModalBasic] = useState(false);
-  const [modalLong, setModalLong] = useState(false);
-  const [modalBack, setModalBack] = useState(false);
   const [backdrop, setBackdrop] = useState(true);
-  const [modalRight, setModalRight] = useState(false);
-  const [modalNestedContainer, setModalNestedContainer] = useState(false);
-  const [modalNested, setModalNested] = useState(false);
   const [closeAll, setCloseAll] = useState(false);
   const [modalLarge, setModalLarge] = useState(false);
-  const [modalSmall, setModalSmall] = useState(false);
+  const [modalLarge1, setModalLarge1] = useState(false);
+  const [modalLarge2, setModalLarge2] = useState(false);
+  const [modalLarge3, setModalLarge3] = useState(false);
+  const [modalLarge4, setModalLarge4] = useState(false);
+  const [modalLarge5, setModalLarge5] = useState(false);
+  const [modalLarge6, setModalLarge6] = useState(false);
   return (
     <div style={{padding:"20px"}}>
     <Row>
@@ -51,13 +51,13 @@ const BlogList = ({ match }) => {
               <Button
                 color="primary"
                 outline
-                onClick={() => setModalLarge(true)}
+                onClick={() => setModalLarge1(true)}
               >
                 View
               </Button>
               <Modal
-                isOpen={modalLarge}
-                toggle={() => setModalLarge(!modalLarge)}
+                isOpen={modalLarge1}
+                toggle={() => setModalLarge1(!modalLarge1)}
                 style={{maxWidth: "800px"}}
               >
                 <ModalHeader>
@@ -71,7 +71,7 @@ const BlogList = ({ match }) => {
                 <ModalFooter>
                   <Button
                     color="secondary"
-                    onClick={() => setModalLarge(false)}
+                    onClick={() => setModalLarge1(false)}
                   >
                     Cancel
                   </Button>
@@ -96,24 +96,27 @@ const BlogList = ({ match }) => {
                 <Button
                   color="primary"
                   outline
-                  onClick={() => setModalBasic(true)}
+                  onClick={() => setModalLarge2(true)}
                 >
                   View
                 </Button>
                 <Modal
-                  isOpen={modalBasic}
-                  toggle={() => setModalBasic(!modalBasic)}
+                  isOpen={modalLarge2}
+                  toggle={() => setModalLarge2(!modalLarge2)}
+                  style={{maxWidth: "800px"}}
                 >
                   <ModalHeader>
                     FICCI EOS - July 2020
                   </ModalHeader>
                   <ModalBody>
-                    <img src=''/>
+                    <iframe src="https://ficci-capam.framez.sg/docs/FICCI%20EOS%20-%20July%202020.pdf" height="400px" width="100%">
+                      <embed width="100%" height="100%" src="https://ficci-capam.framez.sg/docs/FICCI%20EOS%20-%20July%202020.pdf" type="application/pdf" />
+                    </iframe>
                   </ModalBody>
                   <ModalFooter>
                     <Button
                       color="secondary"
-                      onClick={() => setModalBasic(false)}
+                      onClick={() => setModalLarge2(false)}
                     >
                       Cancel
                     </Button>
@@ -138,24 +141,27 @@ const BlogList = ({ match }) => {
                   <Button
                     color="primary"
                     outline
-                    onClick={() => setModalBasic(true)}
+                    onClick={() => setModalLarge3(true)}
                   >
                     View
                   </Button>
                   <Modal
-                    isOpen={modalBasic}
-                    toggle={() => setModalBasic(!modalBasic)}
+                    isOpen={modalLarge3}
+                    toggle={() => setModalLarge3(!modalLarge3)}
+                    style={{maxWidth: "800px"}}
                   >
                     <ModalHeader>
                       MANUFACTURING SURVEY REPORT
                     </ModalHeader>
                     <ModalBody>
-                      <img src=''/>
+                      <iframe src="https://ficci-capam.framez.sg/docs/MANUFACTURING%20SURVEY%20REPORT.pdf" height="400px" width="100%">
+                        <embed width="100%" height="https://ficci-capam.framez.sg/docs/MANUFACTURING%20SURVEY%20REPORT.pdf" type="application/pdf" />
+                      </iframe>
                     </ModalBody>
                     <ModalFooter>
                       <Button
                         color="secondary"
-                        onClick={() => setModalBasic(false)}
+                        onClick={() => setModalLarge3(false)}
                       >
                         Cancel
                       </Button>
@@ -180,24 +186,27 @@ const BlogList = ({ match }) => {
                     <Button
                       color="primary"
                       outline
-                      onClick={() => setModalBasic(true)}
+                      onClick={() => setModalLarge4(true)}
                     >
                       View
                     </Button>
                     <Modal
-                      isOpen={modalBasic}
-                      toggle={() => setModalBasic(!modalBasic)}
+                      isOpen={modalLarge4}
+                      toggle={() => setModalLarge4(!modalLarge4)}
+                      style={{maxWidth: "800px"}}
                     >
                       <ModalHeader>
                         FICCI Dhruva Survey
                       </ModalHeader>
                       <ModalBody>
-                        <img src=''/>
+                        <iframe src="https://ficci-capam.framez.sg/docs/Final%20FICCI%20Dhruva%20Survey%206.7.2020.pdf" height="400px" width="100%">
+                          <embed width="100%" height="100%" src="https://ficci-capam.framez.sg/docs/Final%20FICCI%20Dhruva%20Survey%206.7.2020.pdf" type="application/pdf" />
+                        </iframe>
                       </ModalBody>
                       <ModalFooter>
                         <Button
                           color="secondary"
-                          onClick={() => setModalBasic(false)}
+                          onClick={() => setModalLarge4(false)}
                         >
                           Cancel
                         </Button>
@@ -222,24 +231,27 @@ const BlogList = ({ match }) => {
                       <Button
                         color="primary"
                         outline
-                        onClick={() => setModalBasic(true)}
+                        onClick={() => setModalLarge5(true)}
                       >
                         View
                       </Button>
                       <Modal
-                        isOpen={modalBasic}
-                        toggle={() => setModalBasic(!modalBasic)}
+                        isOpen={modalLarge5}
+                        toggle={() => setModalLarge5(!modalLarge5)}
+                        style={{maxWidth: "800px"}}
                       >
                         <ModalHeader>
                           WOB_Final Report_3103_V12
                         </ModalHeader>
                         <ModalBody>
-                          <img src=''/>
+                          <iframe src="https://ficci-capam.framez.sg/docs/WOB_Final%20Report_3103_V12_Final_compressed.pdf" height="400px" width="100%">
+                            <embed width="100%" height="100%" src="https://ficci-capam.framez.sg/docs/WOB_Final%20Report_3103_V12_Final_compressed.pdf" type="application/pdf" />
+                          </iframe>
                         </ModalBody>
                         <ModalFooter>
                           <Button
                             color="secondary"
-                            onClick={() => setModalBasic(false)}
+                            onClick={() => setModalLarge5(false)}
                           >
                             Cancel
                           </Button>
@@ -264,24 +276,27 @@ const BlogList = ({ match }) => {
                         <Button
                           color="primary"
                           outline
-                          onClick={() => setModalBasic(true)}
+                          onClick={() => setModalLarge6(true)}
                         >
                           View
                         </Button>
                         <Modal
-                          isOpen={modalBasic}
-                          toggle={() => setModalBasic(!modalBasic)}
+                          isOpen={modalLarge6}
+                          toggle={() => setModalLarge6(!modalLarge6)}
+                          style={{maxWidth: "800px"}}
                         >
                           <ModalHeader>
                             CAPAM Compendium 2020
                           </ModalHeader>
                           <ModalBody>
-                            <img src=''/>
+                            <iframe src="https://ficci-capam.framez.sg/docs/CAPAM%20Compendium%202020%20Final.pdf" height="400px" width="100%">
+                              <embed width="100%" height="100%" src="https://ficci-capam.framez.sg/docs/CAPAM%20Compendium%202020%20Final.pdf" type="application/pdf" />
+                            </iframe>
                           </ModalBody>
                           <ModalFooter>
                             <Button
                               color="secondary"
-                              onClick={() => setModalBasic(false)}
+                              onClick={() => setModalLarge6(false)}
                             >
                               Cancel
                             </Button>

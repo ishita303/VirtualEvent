@@ -31,7 +31,7 @@ const loginWithEmailPasswordAsync = async (email, password) =>
   // await auth
   //   .signInWithEmailAndPassword(email, password)
   await axios
-    .post('/login', {
+    .post('https://safe-beyond-20297.herokuapp.com/login', {
       username: email,
       password: password
     }).then((user) => user)
@@ -65,7 +65,7 @@ export function* watchRegisterUser() {
 
 const registerWithEmailPasswordAsync = async (name,email, password) =>
   await axios
-    .post('/register', {
+    .post('https://safe-beyond-20297.herokuapp.com/register', {
       name: name,
       username: email,
       password: password

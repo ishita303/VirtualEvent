@@ -22,6 +22,7 @@ import {
 import { adminRoot, currentUser } from "../../constants/defaultValues"
 import { setCurrentUser } from '../../helpers/Utils';
 import axios from 'axios'
+import login from '../../views/user/login';
 
 const axiosConfig = {
   headers: {
@@ -36,7 +37,7 @@ const loginWithEmailPasswordAsync = async (email, password) =>
   // await auth
   //   .signInWithEmailAndPassword(email, password)
   await axios
-    .post('https://safe-beyond-20297.herokuapp.com/login', {
+    .post('https://pacific-shore-97296.herokuapp.com/login', {
       username: email,
       password: password
     },axiosConfig).then((user) => user)
@@ -56,7 +57,7 @@ function* loginWithEmailPassword({ payload }) {
       yield put(loginUserSuccess(item));
       history.push(adminRoot);
     } else {
-      // yield console.log("error fond");
+      // yield console.log(loginUser.data.error);
       yield put(loginUserError(loginUser.data.error));
     }
   } catch (error) {
@@ -70,10 +71,10 @@ export function* watchRegisterUser() {
 
 const registerWithEmailPasswordAsync = async (name,email, password) =>
   await axios
-    .post('https://safe-beyond-20297.herokuapp.com/register', {
+    .post('https://pacific-shore-97296.herokuapp.com/registeration', {
       name: name,
-      username: email,
-      password: password
+      username: email
+      // password: password
     },axiosConfig).then((user) => user)
     .catch((error) => error);
 
@@ -89,7 +90,8 @@ function* registerWithEmailPassword({ payload }) {
       password
     );
     console.log(registerUser.data);
-    if (registerUser.data=="User Registered") {
+    if (registerUser.data) {
+      yield put(registerUserError(registerUser.data));
       // const item = { uid: registerUser.user.uid, ...currentUser };
       // setCurrentUser(item);
       // yield put(registerUserSuccess(item));

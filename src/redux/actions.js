@@ -37,7 +37,7 @@ export const TODO_ADD_ITEM_SUCCESS = 'TODO_ADD_ITEM_SUCCESS';
 export const TODO_ADD_ITEM_ERROR = 'TODO_ADD_ITEM_ERROR';
 export const TODO_SELECTED_ITEMS_CHANGE = 'TODO_SELECTED_ITEMS_CHANGE';
 
-/* CHAT APP
+/*CHAT APP*/
 export const CHAT_GET_CONTACTS = 'CHAT_GET_CONTACTS';
 export const CHAT_GET_CONTACTS_SUCCESS = 'CHAT_GET_CONTACTS_SUCCESS';
 export const CHAT_GET_CONTACTS_ERROR = 'CHAT_GET_CONTACTS_ERROR';
@@ -50,7 +50,7 @@ export const CHAT_CREATE_CONVERSATION = 'CHAT_CREATE_CONVERSATION';
 export const CHAT_SEARCH_CONTACT = 'CHAT_SEARCH_CONTACT';
 export const CHAT_CHANGE_CONVERSATION = 'CHAT_CHANGE_CONVERSATION';
 
-SURVEY LIST APP
+/* SURVEY LIST APP
 export const SURVEY_LIST_GET_LIST = 'SURVEY_LIST_GET_LIST';
 export const SURVEY_LIST_GET_LIST_SUCCESS = 'SURVEY_LIST_GET_LIST_SUCCESS';
 export const SURVEY_LIST_GET_LIST_ERROR = 'SURVEY_LIST_GET_LIST_ERROR';
@@ -76,3 +76,4 @@ export * from './menu/actions';
 export * from './settings/actions';
 export * from './auth/actions';
 export * from './todo/actions';
+export * from './chat/actions';

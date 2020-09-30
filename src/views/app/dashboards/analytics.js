@@ -18,14 +18,14 @@ const DashboardAnalytics = ({ intl, match }) => {
    let slido={
      display:showSlido, justifyContent: 'center', alignItems: 'center',
                     transform:`skew(${0}deg, ${0}deg)`,position: 'absolute',
-                    width: '350px', height: '440px',
-                    top: '25.11%',left: '71.51%'
+                    width: '500px', height: '600px',
+                    top: '5.11%',left: '61.51%'
    }
   const logo={
     display: 'flex', justifyContent: 'center', alignItems: 'center',
                     transform:`skew(${0}deg, ${0}deg)`,position: 'absolute',
                     width: '50px', height: '50px',
-                    top: '81%',left: '94.31%'
+                    top: '83%',left: '94.31%'
   }
   const slidoToggle=()=>{
     if (showSlido=="flex")
@@ -40,8 +40,8 @@ const DashboardAnalytics = ({ intl, match }) => {
      <div style={vid}>
        <Vimeo video="451526648" height="603px" width="260px" autoplay/>
      </div>
-     <Button onClick={()=>slidoToggle()}><img src="../../../../assets/logos/slido.png" height="100%" width="100%" style={logo}/></Button>
-     <iframe src="https://app.sli.do/event/e1oazdil" height="100%" width="100%" style={slido}/>
+     <img src="../../../../assets/logos/chat.png" height="100%" width="100%" style={logo}  onClick={()=>slidoToggle()}/>
+     <iframe src="../applications/chat" height="100%" width="100%" style={slido}/>
     </div>
     );
 };

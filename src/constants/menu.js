@@ -21,6 +21,11 @@ const data = [
         to: `${adminRoot}/applications/todo`,
       },
       {
+        icon: 'simple-icon-check',
+        label: 'Chat',
+        to: `${adminRoot}/applications/chat`,
+      },
+      {
         icon: 'simple-icon-bubbles',
         label: 'Speakers Profile',
         to: `${adminRoot}/applications/speaker`,
@@ -76,6 +81,6 @@ const data = [
       },
     ],
   },
-  
+
 ];
 export default data;

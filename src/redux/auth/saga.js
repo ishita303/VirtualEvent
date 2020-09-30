@@ -35,11 +35,12 @@ export function* watchLoginUser() {
 
 const firestore = firebase.firestore();
 const analytics = firebase.analytics();
+let response=null;
 
 const trydata = async (uid) => {
   try {
     const uData = firestore.collection('users');
-    let response=null;
+    // let response=null;
     const snapshot= await uData.where('uid', '==', uid).get()
 
     if (snapshot.empty) {
@@ -49,13 +50,13 @@ const trydata = async (uid) => {
 
     snapshot.forEach(doc => {
       response=doc.data();
-      const item = { uid: response.uid, title: response.name, img: response.profileimg };
-      console.log(item);
-      setCurrentUser(item);
-      loginUserSuccess(item);
       // console.log(response);
     });
-    return response;
+    // const item = { uid: response.uid, title: response.name, img: response.profileimg };
+    //   console.log(item);
+    //   setCurrentUser(item);
+    //   loginUserSuccess(item);
+    // return response;
   } catch (error) {
       console.log(error);
   }
@@ -74,10 +75,13 @@ function* loginWithEmailPassword({ payload }) {
   try {
     const loginUser = yield call(loginWithEmailPasswordAsync, email, password);
     if (!loginUser.message) {
-      trydata(loginUser.user.uid)
-      // const item = { uid: loginUser.user.uid, ...currentUser };
-      // setCurrentUser(item);
-      // yield put(loginUserSuccess(item));
+      let item=null;
+      trydata(loginUser.user.uid).then(()=>{
+        item = { uid: response.uid, title: response.name, img: response.profileimg };
+        setCurrentUser(item);
+        
+      }) 
+      yield put(loginUserSuccess(item));     
       history.push(adminRoot);
     } else {
       yield put(loginUserError(loginUser.message));

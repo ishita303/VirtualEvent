@@ -7,5 +7,6 @@ export default function* rootSaga(getState) {
   yield all([
     authSagas(),
     todoSagas(),
+    chatSagas(),
   ]);
 }

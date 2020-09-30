@@ -16,12 +16,14 @@ export const localeOptions = [
 ];
 
 export const firebaseConfig = {
-  apiKey: 'AIzaSyBBksq-Asxq2M4Ot-75X19IyrEYJqNBPcg',
-  authDomain: 'gogo-react-login.firebaseapp.com',
-  databaseURL: 'https://gogo-react-login.firebaseio.com',
-  projectId: 'gogo-react-login',
-  storageBucket: 'gogo-react-login.appspot.com',
-  messagingSenderId: '216495999563',
+  apiKey: "AIzaSyAneOI_qA83Ojg9x7yQcDoz_56EETY1sNU",
+  authDomain: "gogo-ebcc7.firebaseapp.com",
+  databaseURL: "https://gogo-ebcc7.firebaseio.com",
+  projectId: "gogo-ebcc7",
+  storageBucket: "gogo-ebcc7.appspot.com",
+  messagingSenderId: "139486879162",
+  appId: "1:139486879162:web:b4b12ca0202679f4e71183",
+  measurementId: "G-2NBYNQ4WCL"
 };
 
 export const currentUser = {

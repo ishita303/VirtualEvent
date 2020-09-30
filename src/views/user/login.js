@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Link } from "react-router-dom";
-import { Row, Card, CardTitle, Label, FormGroup, Button, Alert } from 'reactstrap';
+import { Row, Card, CardTitle, Label, FormGroup, Button } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -10,7 +9,6 @@ import { NotificationManager } from '../../components/common/react-notifications
 import { loginUser } from '../../redux/actions';
 import { Colxx } from '../../components/common/CustomBootstrap';
 import IntlMessages from '../../helpers/IntlMessages';
-// import { login } from './UserFunctions'
 
 const validatePassword = (value) => {
   let error;
@@ -37,10 +35,8 @@ const Login = ({ history, loading, error, loginUserAction }) => {
   const [password] = useState('gogo123');
 
   useEffect(() => {
-    // console.log('useEffect Error',error)
-    if (error && error !=='') {
-      alert(error)
-      // NotificationManager.warning(error, 'Login Error', 3000, null, null, '');
+    if (error) {
+      NotificationManager.warning(error, 'Login Error', 3000, null, null, '');
     }
   }, [error]);
 
@@ -59,13 +55,13 @@ const Login = ({ history, loading, error, loginUserAction }) => {
       <Colxx xxs="12" md="10" className="mx-auto my-auto">
         <Card className="auth-card">
           <div className="position-relative image-side ">
-            <p className="text-white h2">FICCI-CAPAM 2020</p>
+            <p className="text-white h2">MAGIC IS IN THE DETAILS</p>
             <p className="white mb-0">
               Please use your credentials to login.
               <br />
               If you are not a member, please{' '}
               <NavLink to="/user/register" className="white">
-                REGISTER
+                register
               </NavLink>
               .
             </p>
@@ -114,7 +110,7 @@ const Login = ({ history, loading, error, loginUserAction }) => {
                   </FormGroup>
                   <div className="d-flex justify-content-between align-items-center">
                     <NavLink to="/user/forgot-password">
-                      {/* <IntlMessages id="user.forgot-password-question" /> */}
+                      <IntlMessages id="user.forgot-password-question" />
                     </NavLink>
                     <Button
                       color="primary"
